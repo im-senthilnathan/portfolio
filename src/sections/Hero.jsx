@@ -1,20 +1,16 @@
 import { Download } from "lucide-react";
-import Header from "../components/Header";
 import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
         <div className="bg-mist min-h-screen">
 
-            {/* Header */}
-            <Header />
-
             {/* Hero Body */}
-            <section className="max-w-7xl mx-auto py-4 px-4 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <section id="home" className="max-w-7xl mx-auto pt-28 px-4 py-4 md:pt-36 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                 {/* Left Content */}
                 <motion.div
-                    initial={{ opacity: 0, x: -55 }}
+                    initial={{ opacity: 0, x: -45 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: false, amount: 0.5 }}
@@ -36,7 +32,7 @@ const Hero = () => {
                     <a
                         href="/resume.pdf"
                         download
-                        className="group inline-flex items-center gap-2 mt-8 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary transition"
+                        className="group inline-flex items-center gap-2 mt-8 bg-accent font-inter text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary transition"
                     >
                         Download Resume
                         <Download
@@ -48,11 +44,11 @@ const Hero = () => {
 
                 {/* Right Image */}
                 <motion.div
-                    initial={{ opacity: 0, x: 55 }}
+                    initial={{ opacity: 0, x: 45 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: false, amount: 0.5 }}
-                    className="flex justify-center pr-4 md:pr-0 md:justify-end"
+                    className="flex justify-center md:pr-24 md:justify-end"
                 >
                     <img
                         src="/hero-image.jpg"

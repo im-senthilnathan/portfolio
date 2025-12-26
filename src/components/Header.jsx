@@ -1,6 +1,8 @@
+import { Sun } from "lucide-react";
+
 const Header = () => {
     return (
-        <header className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+        <header className="bg-mist fixed top-0 left-0 min-w-screen z-50 rounded-b-4xl max-w-full px-6 py-4 flex items-center justify-between">
 
             {/* Left - Portfolio Text */}
             <h1 className="text-4xl font-poppins font-bold">
@@ -15,6 +17,7 @@ const Header = () => {
                 <a href="#projects" className="hover:text-accent transition">Projects</a>
                 <a href="#education" className="hover:text-accent transition">Education</a>
                 <a href="#contact" className="hover:text-accent transition">Contact</a>
+                <Sun size={24} className="cursor-pointer text-amber-400" />
             </nav>
 
         </header>
