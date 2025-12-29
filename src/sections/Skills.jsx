@@ -7,7 +7,7 @@ const skills = [
     { name: "Java", percentage: 75 },
     { name: "Python", percentage: 60 },
     { name: "MySQL", percentage: 85 },
-    { name: "MongoDB", percentage: 55 },
+    { name: "MongoDB", percentage: 60 },
     { name: "Git & GitHub", percentage: 80 },
 ];
 

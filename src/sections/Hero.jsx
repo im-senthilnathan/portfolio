@@ -53,7 +53,7 @@ const Hero = () => {
                     <img
                         src="/hero-image.jpg"
                         alt="Senthil Nathan"
-                        className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-xl"
+                        className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl"
                     />
                 </motion.div>
 

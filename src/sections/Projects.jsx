@@ -3,21 +3,21 @@ import ProjectCard from "../components/ProjectCard";
 const projects = [
     {
         title: "SmartDine – QR Restaurant Ordering System",
-        date: "Mar 2024",
+        date: "Mar - May 2025",
         image: "/projects/smartdine.jpg",
         description:
             "A QR-based restaurant ordering system built using the MERN stack that allows customers to view menus and place orders digitally."
     },
     {
         title: "Kleer – Background Verification Platform",
-        date: "Jan 2024",
+        date: "Aug - Nov 2025",
         image: "/projects/next_js.jpg",
         description:
             "A web application developed for a France-based company to manage background verification workflows with role-based access."
     },
     {
         title: "Personal Portfolio Website",
-        date: "Feb 2025",
+        date: "Dec 2025",
         image: "/projects/portfolio.png",
         description:
             "My personal portfolio built using React, Tailwind CSS, and Framer Motion to showcase my skills and projects."
@@ -29,9 +29,9 @@ const Projects = () => {
         <div className="bg-charcoal min-h-screen">
             <section
                 id="projects"
-                className="max-w-7xl mx-auto pt-24 px-4"
+                className="max-w-7xl mx-auto pt-24 pb-6 px-4"
             >
-                <h1 className="text-5xl text-white font-bold font-geom mb-16 drop-shadow-lg">
+                <h1 className="text-5xl text-white font-bold font-geom mb-14 drop-shadow-lg">
                     Recent <span className="text-accent font-poppins">Projects</span>
                 </h1>
 
