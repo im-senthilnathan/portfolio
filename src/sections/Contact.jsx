@@ -1,6 +1,44 @@
 import { Phone, Mail, Globe, MapPin, Instagram, Github, Linkedin } from "lucide-react";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .send(
+                "service_zzelcja",
+                "template_up1cq7q",
+                formData,
+                "5mNQ3gLze5x7Lm-mI"
+            )
+            .then(
+                () => {
+                    alert("Message sent successfully 👍");
+                    setFormData({ name: "", email: "", subject: "", message: "" });
+                },
+                () => {
+                    alert("Failed to send message ❌");
+                }
+            );
+    };
+
     return (
         <div className="bg-white min-h-screen">
             <section
@@ -15,13 +53,16 @@ const Contact = () => {
 
                     {/* LEFT – CONTACT FORM */}
                     <div>
-                        <form className="space-y-6">
+                        <form onSubmit={sendEmail} className="space-y-6">
 
                             <div>
                                 <label className="block mb-1 text-sm font-medium">
                                     Your Name
                                 </label>
                                 <input
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     type="text"
                                     placeholder="Full Name"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent"
@@ -33,6 +74,9 @@ const Contact = () => {
                                     Your Email
                                 </label>
                                 <input
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     type="email"
                                     placeholder="Email Address"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent"
@@ -44,6 +88,9 @@ const Contact = () => {
                                     Subject
                                 </label>
                                 <input
+                                    name="subject"
+                                    value={formData.subject}
+                                    onChange={handleChange}
                                     type="text"
                                     placeholder="Subject"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent"
@@ -55,6 +102,9 @@ const Contact = () => {
                                     Your Message
                                 </label>
                                 <textarea
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     rows="5"
                                     placeholder="Message"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent resize-none"
@@ -63,7 +113,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="bg-accent text-white px-8 py-3 rounded-xl rounded-tr-sm font-semibold hover:bg-primary transition"
+                                className="bg-accent text-white px-8 py-3 rounded-xl rounded-tr-sm font-semibold cursor-pointer hover:bg-primary transition"
                             >
                                 Send Message
                             </button>
