@@ -63,7 +63,7 @@ const About = () => {
                         {/* Email */}
                         <a
                             href="mailto:im.senthilnathan.dev@gmail.com"
-                            className="text-red-600 border-2 px-2 py-2 rounded-xl transition transform hover:text-black hover:-translate-y-1"
+                            className="text-red-600 border-2 border-red-600 px-2 py-2 rounded-xl transition transform hover:text-white hover:bg-red-600 hover:-translate-y-1"
                             aria-label="Email"
                         >
                             <Mail size={24} />
@@ -74,7 +74,7 @@ const About = () => {
                             href="https://instagram.com/im.senthilnathan_"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-fuchsia-600 border-2 px-2 py-2 rounded-xl transition transform hover:text-black hover:-translate-y-1"
+                            className="text-fuchsia-600 border-2 border-fuchsia-600 px-2 py-2 rounded-xl transition transform hover:text-white hover:bg-fuchsia-600 hover:-translate-y-1"
                             aria-label="Instagram"
                         >
                             <Instagram size={24} />
@@ -85,7 +85,7 @@ const About = () => {
                             href="https://github.com/im-senthilnathan"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-amber-600 border-2 px-2 py-2 rounded-xl transition transform hover:text-black hover:-translate-y-1"
+                            className="text-amber-600 border-2 border-amber-600 px-2 py-2 rounded-xl transition transform hover:text-white hover:bg-amber-600 hover:-translate-y-1"
                             aria-label="GitHub"
                         >
                             <Github size={24} />
@@ -96,7 +96,7 @@ const About = () => {
                             href="https://linkedin.com/in/im-senthilnathan"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-800 border-2 px-2 py-2 rounded-xl transition transform hover:text-black hover:-translate-y-1"
+                            className="text-blue-800 border-2 border-blue-800 px-2 py-2 rounded-xl transition transform hover:text-white hover:bg-blue-800 hover:-translate-y-1"
                             aria-label="LinkedIn"
                         >
                             <Linkedin size={24} />

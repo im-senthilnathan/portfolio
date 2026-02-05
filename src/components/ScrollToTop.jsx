@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import scrollTop from "../assets/arrow-up.jpg";
+import scrollTop from "../assets/arrow-up.png";
 
 const ScrollToTop = () => {
     const [show, setShow] = useState(false);
@@ -43,7 +43,7 @@ const ScrollToTop = () => {
                     <motion.img
                         src={scrollTop}
                         alt="Back to Home"
-                        className="w-14 h-14 rounded-full shadow-lg cursor-pointer"
+                        className="bg-light w-14 h-14 rounded-full shadow-lg cursor-pointer"
                         animate={{ y: [0, -6, 0] }}
                         transition={{
                             duration: 2,
