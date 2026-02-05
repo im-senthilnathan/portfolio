@@ -4,21 +4,21 @@ const projects = [
     {
         title: "SmartDine – QR Restaurant Ordering System",
         date: "Mar - May 2025",
-        image: "/projects/smartdine.jpg",
+        image: `${import.meta.env.BASE_URL}projects/mern.jfif`,
         description:
             "A QR-based restaurant ordering system built using the MERN stack that allows customers to view menus and place orders digitally."
     },
     {
         title: "Kleer – Background Verification Platform",
         date: "Aug - Nov 2025",
-        image: "/projects/next_js.jpg",
+        image: `${import.meta.env.BASE_URL}projects/next_js.jpg`,
         description:
             "A web application developed for a France-based company to manage background verification workflows with role-based access."
     },
     {
         title: "Personal Portfolio Website",
         date: "Dec 2025",
-        image: "/projects/portfolio.png",
+        image: `${import.meta.env.BASE_URL}projects/portfolio.png`,
         description:
             "My personal portfolio built using React, Tailwind CSS, and Framer Motion to showcase my skills and projects."
     }

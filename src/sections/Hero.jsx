@@ -1,5 +1,6 @@
 import { Download } from "lucide-react";
 import { motion } from "framer-motion";
+import heroImage from "../assets/hero-image.jpg";
 
 const Hero = () => {
     return (
@@ -30,7 +31,7 @@ const Hero = () => {
 
                     {/* CTA Button */}
                     <a
-                        href="/resume.pdf"
+                        href="/portfolio/resume.pdf"
                         download
                         className="group inline-flex items-center gap-2 mt-8 bg-accent font-inter text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary transition"
                     >
@@ -51,7 +52,7 @@ const Hero = () => {
                     className="flex justify-center md:pr-24 md:justify-end"
                 >
                     <img
-                        src="/hero-image.jpg"
+                        src={heroImage}
                         alt="Senthil Nathan"
                         className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl"
                     />

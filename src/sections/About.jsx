@@ -1,5 +1,6 @@
 import { Mail, Instagram, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
+import heroImage from "../assets/hero-image2.jpg";
 
 const About = () => {
     return (
@@ -16,7 +17,7 @@ const About = () => {
                     viewport={{ once: false, amount: 0.5 }}
                 >
                     <img
-                        src="/hero-image2.jpg"
+                        src={heroImage}
                         alt="Senthil Nathan"
                         className="w-72 h-72 md:w-96 md:h-auto rounded-xl rounded-tr-[100px] object-cover shadow-2xl"
                     />
