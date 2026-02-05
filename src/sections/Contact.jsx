@@ -45,7 +45,7 @@ const Contact = () => {
                 id="contact"
                 className="max-w-7xl mx-auto pt-24 py-10 px-4"
             >
-                <h1 className="text-5xl text-center font-bold font-geom mb-20">
+                <h1 className="text-5xl text-center font-bold font-geom mb-16">
                     <span className="text-accent font-poppins">Contact</span> Me
                 </h1>
 
@@ -66,6 +66,7 @@ const Contact = () => {
                                     type="text"
                                     placeholder="Full Name"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent"
+                                    required
                                 />
                             </div>
 
@@ -80,6 +81,7 @@ const Contact = () => {
                                     type="email"
                                     placeholder="Email Address"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent"
+                                    required
                                 />
                             </div>
 
@@ -94,6 +96,7 @@ const Contact = () => {
                                     type="text"
                                     placeholder="Subject"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent"
+                                    required
                                 />
                             </div>
 
@@ -108,6 +111,7 @@ const Contact = () => {
                                     rows="5"
                                     placeholder="Message"
                                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent resize-none"
+                                    required
                                 ></textarea>
                             </div>
 
@@ -160,7 +164,7 @@ const Contact = () => {
                                 <div>
                                     <p className="font-semibold">Website</p>
                                     <p className="text-gray-600">
-                                        im-senthilnathan.github.io
+                                        im-senthilnathan.github.io/portfolio
                                     </p>
                                 </div>
                             </div>
